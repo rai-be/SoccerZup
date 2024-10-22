@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: banco_de_dados
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banco_de_dados
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+    jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+
