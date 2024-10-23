@@ -22,11 +22,10 @@ public class Team {
     @NotEmpty(message = "O nome do time não pode ser vazio")
     private String name;
 
-    @ElementCollection
-    @Size(max = 5, message = "Um time pode ter no máximo 5 jogadores.")
-    @NotEmpty(message = "A lista de jogadores não pode estar vazia")
-    @JsonProperty("players")
-    private List<String> players = new ArrayList<>();
+        @ElementCollection
+        @Size(max = 5, message = "Um time pode ter no máximo 5 jogadores.")
+        @JsonProperty("players")
+        private List<String> players = new ArrayList<>();
 
 
     public Long getId() {
